@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For AG 💌</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: url("bg2.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Arial", sans-serif;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.92);
+      padding: 35px;
+      border-radius: 25px;
+      text-align: center;
+      width: 330px;
+      box-shadow: 0 0 30px pink;
+    }
+
+    h1 {
+      color: #ff4d88;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    button {
+      padding: 10px 24px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 8px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .yes {
+      background: #ff5c93;
+      color: white;
+    }
+
+    .maybe {
+      background: #ffb6cc;
+      color: white;
+    }
+
+    .sure {
+      background: #ff85ad;
+      color: white;
+      display: none;
+    }
+
+    .finalyes {
+      background: #ff3366;
+      color: white;
+      display: none;
+    }
+
+    #finalmsg {
+      display: none;
+      color: #cc0066;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <h1>AG 💖</h1>
+
+  <p>Can I borrow you on</p>
+  <p><b>14th February? 💌</b></p>
+
+  <p>— Your SC 💞</p>
+
+  <br>
+
+  <button class="yes" onclick="showSure()">Yes 😍</button>
+
+  <button class="maybe" onclick="showSure()">Maybe 🤭</button>
+
+  <br>
+
+  <button class="sure" id="sureBtn" onclick="showFinal()">
+    Are you sure? 😳
+  </button>
+
+  <br>
+
+  <button class="finalyes" id="finalYesBtn" onclick="showLove()">
+    YES 💘
+  </button>
+
+  <div id="finalmsg">
+    🎉 YAYYY, GOT BLESSED 🥹💞💐
+  </div>
+
+</div>
+
+<script>
+
+function showSure() {
+  document.getElementById("sureBtn").style.display = "inline-block";
+}
+
+function showFinal() {
+  document.getElementById("finalYesBtn").style.display = "inline-block";
+}
+
+function showLove() {
+  document.getElementById("finalmsg").style.display = "block";
+}
+
+</script>
+
+</body>
+</html>/Users/sumitachoudhury/Desktop/AG.html.txt
